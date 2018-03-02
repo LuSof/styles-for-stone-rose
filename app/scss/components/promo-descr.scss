@@ -1,0 +1,65 @@
+.promo-descr {
+  max-width: 600px;
+  margin: 0 auto;
+  margin-bottom: 100px;
+  padding-left: 20px;
+  padding-right: 20px;
+  box-sizing: border-box;
+}
+
+.promo-descr_size_l {
+  max-width: 760px;
+  margin-bottom: 50px;
+}
+
+.promo-descr_size_xl {
+  max-width: 960px;
+  margin-bottom: 50px;
+}
+
+.promo-descr__heading {
+  display: block;
+  font-size: 42px;
+  font-weight: 600;
+  line-height: 1.23;
+  text-align: center;
+  margin-bottom: 50px;
+
+}
+
+.promo-descr__heading_size_s {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.promo-descr__text {
+  display: block;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 1.5;
+  text-align: center;
+
+}
+
+.promo-descr__text_size_m {
+  font-size: 20px;
+}
+
+.promo-descr__text_size_s {
+  font-size: 16px;
+}
+
+@media screen and (max-width: 700px) {
+
+  .promo-descr__heading {
+    font-size: 28px;
+  }
+
+  .promo-descr__text {
+    font-size: 18px;
+  }
+
+  .promo-descr {
+    margin-bottom: 50px;
+  }
+}

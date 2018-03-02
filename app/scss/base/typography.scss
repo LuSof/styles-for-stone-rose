@@ -1,0 +1,45 @@
+html {
+  font-size: $font-size;
+}
+
+body {
+  font-family: $font-family;
+  font-size:   $font-size;
+  line-height: $line-height;
+  color:       $text-color;
+}
+
+h1 { font-size: $font-size--h1; color: $h1-color;}
+h2 { font-size: $font-size--h2; color: $h2-color;}
+h3 { font-size: $font-size--h3; color: $h3-color;}
+h4 { font-size: $font-size--h4; color: $h4-color;}
+h5 { font-size: $font-size--h5; color: $h5-color;}
+h6 { font-size: $font-size--h6; color: $h6-color;}
+
+h1, h2, h3 {
+  margin-top: 0;
+  margin-bottom: 30px;
+  font-family:   $font-family;
+  line-height:   $line-height;
+  text-transform: uppercase;
+}
+
+h4, h5, h6 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-family:   $font-family;
+  line-height:   $line-height;
+}
+
+
+p {
+  padding-top: 0;
+  padding-bottom: $type-spacer;
+}
+
+ol,
+ul,
+dl {
+  padding-top: 0;
+  padding-bottom: $type-spacer;
+}

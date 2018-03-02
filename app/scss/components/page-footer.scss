@@ -1,0 +1,30 @@
+.page-footer {
+  background-image: url(../img/bg-footer-xs-mini.png);
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  padding-top: 40px;
+  padding-bottom: 25px;
+}
+
+.page-footer__text-wrap {
+  max-width: 400px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #c7d6dd;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.55;
+  padding-top: 5px;
+
+  & span {
+    display: block;
+  }
+}
+
+.page-footer__logo {
+  border-bottom: 1px solid;
+  margin-bottom: 15px;
+}

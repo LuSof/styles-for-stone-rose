@@ -1,0 +1,62 @@
+.logo-header__link {
+  margin-bottom: 68px;
+  display: block;
+}
+
+.logo-header__link_size_s{
+  margin-bottom: 0px;
+}
+
+.logo-header__size_s{
+  margin-bottom: 50px;
+}
+
+.logo-header__img {
+  width: 500px;
+}
+
+.logo-header__link-name {
+  display: block;
+  font-size: 72px;
+  font-weight: 600;
+  letter-spacing: .5px;
+  color: #fff;
+  text-transform: uppercase;
+  margin-bottom: 68px;
+
+  &:hover {
+    color: #fff;
+    text-decoration: none;
+  }
+}
+
+.logo-header__descr {
+  display: block;
+  max-width: 700px;
+  margin: 0 auto;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 1.5;
+  color: #fff;
+  text-transform: none;
+}
+
+@media screen and (max-width: 700px) {
+
+  .logo-header__link {
+    margin-bottom: 20px;
+  }
+
+  .logo-header__link-name {
+    font-size: 30px;
+    margin-bottom: 40px;
+  }
+  .logo-header__descr {
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 2px;
+  }
+  .logo-header {
+    margin-bottom: 50px;
+  }
+}

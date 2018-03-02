@@ -1,0 +1,273 @@
+.service {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.service__item {
+  width: 33%;
+  flex-grow: 0.5;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 50px;
+  box-sizing: border-box;
+}
+
+.service__img-wrap {
+  height: 360px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.service__img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.service__heading {
+  margin-bottom: 20px;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 1.17;
+}
+
+.service__text {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.55;
+  margin-bottom: 30px;
+}
+
+.service__list-wrap {
+  margin-bottom: 35px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+  background: rgba(245, 241, 241, 0.5);
+}
+
+.service__list {
+  display: block;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 2.2;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.service__btn {
+  display: block;
+  border: 1px solid #000;
+  text-transform: uppercase;
+  padding: 10px;
+  width: 260px;
+  margin: 0 auto;
+  text-align: center;
+  color: #000;
+
+  &:hover {
+    color: #000;
+    text-decoration: none;
+  }
+}
+
+.service__full {
+  display: none;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.service__full-wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+.service__wrap-in {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.service__content {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.service__prev-full, .service__next-full {
+  align-self: center;
+}
+
+.service__close-wrap {
+  position: relative;
+  padding-bottom: 50px;
+}
+
+.service__close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 32px;
+  height: 32px;
+  opacity: 0.5;
+}
+.service__close:hover {
+  opacity: 1;
+}
+.service__close:before, .service__close:after {
+  position: absolute;
+  left: 15px;
+  content: ' ';
+  height: 33px;
+  width: 2px;
+  background-color: #798185;
+}
+.service__close:before {
+  transform: rotate(45deg);
+}
+.service__close:after {
+  transform: rotate(-45deg);
+}
+
+
+.service__gallery {
+  display: flex;
+  justify-content: space-between;
+  max-width: 750px;
+  margin: 0 auto;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.service__gallery-left {
+  width: 49%;
+  height: 400px;
+}
+
+.service__gallery-right {
+  width: 49%;
+  height: 400px;
+}
+
+.service__gallery-left-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  padding-bottom: 20px;
+  box-sizing: border-box;
+}
+
+.service__gallery-right-img {
+  width: 100%;
+  height: 50%;
+  object-fit: cover;
+  padding-bottom: 20px;
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 1040px) and (min-width: 681px) {
+
+  .service {
+    max-width: 750px;
+    margin-bottom: 20px;
+  }
+  .service__img-wrap {
+    height: 250px;
+  }
+
+  .service__item {
+    width: 60%;
+    margin-bottom: 40px;
+  }
+
+  .service__btn {
+    display: none;
+  }
+
+  .service__full {
+    display: none;
+  }
+}
+
+
+@media screen and (max-width: 680px) and (min-width: 481px) {
+
+  .service {
+    margin-bottom: 10px;
+  }
+  .service__img-wrap {
+    height: 250px;
+  }
+
+  .service__item {
+    width: 70%;
+    margin-bottom: 40px;
+  }
+
+  .service__heading {
+    font-size: 24px;
+  }
+
+  .service__text {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+
+  .service__btn {
+    display: none;
+  }
+
+  .service__full {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 480px) {
+
+  .service {
+    margin-bottom: 10px;
+  }
+  .service__img-wrap {
+    height: 250px;
+  }
+
+  .service__item {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+
+  .service__heading {
+    font-size: 24px;
+  }
+
+  .service__text {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+
+  .service__btn {
+    display: none;
+  }
+
+  .service__full {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 350px) {
+
+  .service__list-wrap {
+    display: none;
+  }
+
+  .service__btn {
+    display: none;
+  }
+
+  .service__full {
+    display: none;
+  }
+
+}

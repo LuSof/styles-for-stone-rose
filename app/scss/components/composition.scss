@@ -1,0 +1,150 @@
+.composition {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 60px;
+}
+
+.composition__nav-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+
+}
+
+.composition__nav-item {
+  display: inline;
+  margin-left: 7px;
+
+}
+
+.composition__wrap {
+  display: none;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 15px;
+  background: #fff;
+  border: 1px solid #c7d6dd;
+}
+
+.composition__item {
+  flex-basis: 200px;
+  flex-grow: 0.3;
+  padding: 20px 10px;
+  box-sizing: border-box;
+}
+
+.composition__img_wrap {
+  width: 100%;
+  height: 200px;
+  margin-bottom: 15px;
+}
+
+.composition__img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.composition__link {
+  color: #000;
+
+  &:hover {
+    color: #000;
+  }
+}
+
+.composition__name {
+  display: block;
+  font-size: 15px;
+  text-align: center;
+}
+
+.composition__price {
+  display: block;
+  font-size: 15px;
+  text-align: center;
+  color: #798185;
+}
+
+
+
+
+/* Прячем чекбоксы */
+.composition__nav-btn {
+	display: none;
+	position: absolute;
+}
+
+/* Стили переключателей вкладок (табов) */
+.composition__nav-lebel {
+	display: inline-block;
+	margin: 0 2px 5px;
+	padding: 10px 25px;
+	text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2.2px;
+	color: #c7d6dd;
+	border: 0px solid #c7d6dd;
+	border-width: 1px 1px 1px 1px;
+	background: #fff;
+}
+
+/* Изменения стиля переключателей вкладок при наведении */
+
+.composition__nav-lebel:hover {
+	color: #798185;
+	cursor: pointer;
+}
+/* Стили для активной вкладки */
+.composition__nav-btn:checked+.composition__nav-lebel {
+	color: #fff;
+	background: #000;
+}
+/* Активация секций с помощью псевдокласса :checked */
+#tab-1:checked~#content-tab-1, #tab-2:checked~#content-tab-2,
+#tab-3:checked~#content-tab-3, #tab-4:checked~#content-tab-4,
+#tab-5:checked~#content-tab-5, #tab-6:checked~#content-tab-6,
+#tab-7:checked~#content-tab-7, #tab-8:checked~#content-tab-8,
+#tab-9:checked~#content-tab-9, #tab-10:checked~#content-tab-10, {
+	display: flex;
+  flex-wrap: wrap;
+}
+/* Убираем текст с переключателей
+* и оставляем иконки на малых экранах
+*/
+
+@media screen and (max-width: 500px) {
+	.composition__wrap {
+    border: none;
+    padding: 0;
+	}
+
+  .composition__item {
+    flex-basis: 150px;
+  }
+
+}
+
+@media screen and (max-width: 400px) {
+	.composition__wrap {
+    border: none;
+    padding: 0;
+	}
+
+  .composition__item {
+    flex-basis: 130px;
+  }
+
+  .composition__img_wrap {
+    height: 130px;
+  }
+
+  .composition__img {
+    height: 130px;
+  }
+
+}

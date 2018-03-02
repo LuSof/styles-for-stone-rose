@@ -1,0 +1,13 @@
+.non-info {
+  text-align: center;
+  display: block;
+  margin-bottom: 50px;
+  font-size: 22px;
+  font-weight: 400;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}

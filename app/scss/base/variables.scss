@@ -1,0 +1,49 @@
+
+// Семантические цвета
+
+$body-bg:                     #fff;
+$text-color:                  #000;
+
+$green-color-light:           #b5cec9;
+$green-color:                 #73b9ab;
+
+
+$link-color:                  $green-color;
+$link-color--hover:           #41a893;
+
+$h1-color:                  $green-color;
+$h2-color:                  $green-color;
+$h3-color:                  $green-color;
+$h4-color:                  $green-color-light;
+$h5-color:                  $green-color-light;
+$h6-color:                  $green-color-light;
+
+$footer-color:              $green-color;
+
+// Базовая типографика
+
+$font-size:                   16px;
+$font-size--h1:               24px;
+$font-size--h2:               22px;
+$font-size--h3:               18px;
+$font-size--h4:               16px;
+$font-size--h5:               16px;
+$font-size--h6:               16px;
+
+
+$line-height:                 1.375em;
+
+$font-family:                 'Roboto', sans-serif;
+
+$font-family--headings:       $font-family;
+
+$type-spacer:                 0.5em;
+
+// Ширины
+
+$screen-xs:                   0;
+$screen-sm:                   480px;
+$screen-md:                   768px;
+$screen-lg:                   992px;
+$screen-xl:                   1200px;
+$screen-xxl:                  1800px;

@@ -1,0 +1,35 @@
+@charset 'UTF-8';
+
+@import 'normalize';
+
+@import
+  'base/variables',
+  'base/mixins',
+  'base/base',
+  'base/fonts',
+  'base/typography';
+
+  //'base/media',
+  //'base/print;
+
+@import
+  'components/page-header',
+  'components/main-nav',
+  'components/main-content',
+  'components/logo-header',
+  'components/move-down',
+  'components/gallery',
+  'components/promo-descr',
+  'components/service',
+  'components/advantages',
+  'components/reviews',
+  'components/subscribe',
+  'components/about-us',
+  'components/team',
+  'components/slogan',
+  'components/training',
+  'components/composition',
+  'components/news',
+  'components/page-404',
+  'components/contact',
+  'components/page-footer';

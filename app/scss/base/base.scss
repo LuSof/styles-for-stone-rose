@@ -1,0 +1,83 @@
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+body {
+  background-color: $body-bg;
+  margin: 0;
+}
+
+a {
+  color: $link-color;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    color: $link-color--hover;
+    text-decoration: none;
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+  // width: 100% \9; // Возможное решение для svg-картинок в IE9-10
+}
+
+figure {
+  //margin: $type-spacer 0;
+}
+
+figcaption {
+  //font-size: $font-size--small;
+  //margin-top: .5em;
+}
+
+[role="button"] {
+  cursor: pointer;
+}
+
+a,
+// area,
+button,
+[role="button"],
+input,
+label,
+select,
+// summary,
+textarea {
+  touch-action: manipulation;
+  outline: none;
+}
+
+.margin {
+  margin-bottom: 60px;
+}
+
+input[required] ~ .val:after {
+  content: '*';
+  color: red;
+}
+
+input:required ~ .val:after {
+  content: '*';
+  color: red;
+}
+
+input:optional ~ .val:after {
+  content: '(optional)';
+}
+
+input[type="checkbox"]+span,input[type="radio"]+span{-webkit-appearance:none;width:20px;height:20px;border:2px solid #000;outline:none;margin:5px;box-sizing:border-box;display:inline-block;}
+input[type="checkbox"]:checked+span:before{content:"";display:block;width:9px;height:14px;border:0 solid #41a893;border-width:0 2px 2px 0;-webkit-transform:rotateZ(45deg);margin:-6px 3px;pointer-events:none;}
+
+input[type="radio"]+span{border-radius:100%;}
+input[type="radio"]:checked+span:before{content:"";display:block;background:#41a893;border-radius:100%;width:9px;height:9px;margin:3px;pointer-events:none;}
